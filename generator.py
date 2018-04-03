@@ -21,6 +21,7 @@
 """
 import os
 import random
+import numpy as np
 
 num_files = 30
 main_folders = ['small', 'med', 'large']
@@ -46,11 +47,13 @@ def generate_sorted_number_list(size, reverse):
     return arr
 
 def print_num_list_to_file(array, filepath):
-    print(filepath)
-    fo = open(filepath, 'w')
-    for num in array:
-        fo.write(str(num))
-        fo.write(',')
+    # fo = open(filepath + '.csv', 'w')
+    # for num in array:
+    #     fo.write(str(num))
+    #     if num != array[-1]:
+    #         fo.write(',')
+    # print(filepath)
+    np.savez(filepath, array)
 
 def generate():
     """ Generate all the files. """
