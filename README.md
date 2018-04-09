@@ -1,6 +1,6 @@
 AlgorithmsProject
 
-Using -Xss515m vm argument in the run config for the project.
+Using -Xss1024m vm argument in the run config for the project.
 
 Results are in the results folder. they are measured in Miliseconds. 
 21 ms = 0.021 seconds.
